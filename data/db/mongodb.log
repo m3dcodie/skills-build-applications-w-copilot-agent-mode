@@ -37,3 +37,29 @@
 2025-04-08T06:05:34.512+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
 2025-04-08T06:05:34.512+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
 2025-04-08T06:05:34.513+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2025-04-08T06:17:00.003+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:35684 #1 (1 connection now open)
+2025-04-08T06:17:00.003+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:35684 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-08T06:17:00.006+0000 I STORAGE  [conn1] createCollection: octofit_db.users with generated UUID: c3ee1011-dcd2-4c6a-a8c5-5c6ed66a8115
+2025-04-08T06:17:00.015+0000 I STORAGE  [conn1] createCollection: octofit_db.teams with generated UUID: 0ed960ea-e91b-4c6c-b9fa-992607d12d92
+2025-04-08T06:17:00.023+0000 I STORAGE  [conn1] createCollection: octofit_db.activity with generated UUID: 66c82459-c0ab-4f85-944c-aeb5f1405a84
+2025-04-08T06:17:00.029+0000 I STORAGE  [conn1] createCollection: octofit_db.leaderboard with generated UUID: ffd7562f-788c-4e48-b99c-86f8dbbdd763
+2025-04-08T06:17:00.038+0000 I STORAGE  [conn1] createCollection: octofit_db.workouts with generated UUID: dcad3c0d-1956-4500-88a5-31e3d1ba2210
+2025-04-08T06:17:00.051+0000 I INDEX    [conn1] build index on: octofit_db.users properties: { v: 2, unique: true, key: { email: 1.0 }, name: "email_1", ns: "octofit_db.users" }
+2025-04-08T06:17:00.051+0000 I INDEX    [conn1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T06:17:00.052+0000 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2025-04-08T06:17:00.055+0000 I INDEX    [conn1] build index on: octofit_db.teams properties: { v: 2, unique: true, key: { name: 1.0 }, name: "name_1", ns: "octofit_db.teams" }
+2025-04-08T06:17:00.055+0000 I INDEX    [conn1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T06:17:00.056+0000 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2025-04-08T06:17:00.060+0000 I INDEX    [conn1] build index on: octofit_db.activity properties: { v: 2, unique: true, key: { activity_id: 1.0 }, name: "activity_id_1", ns: "octofit_db.activity" }
+2025-04-08T06:17:00.060+0000 I INDEX    [conn1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T06:17:00.061+0000 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2025-04-08T06:17:00.065+0000 I INDEX    [conn1] build index on: octofit_db.leaderboard properties: { v: 2, unique: true, key: { leaderboard_id: 1.0 }, name: "leaderboard_id_1", ns: "octofit_db.leaderboard" }
+2025-04-08T06:17:00.065+0000 I INDEX    [conn1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T06:17:00.066+0000 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2025-04-08T06:17:00.071+0000 I INDEX    [conn1] build index on: octofit_db.workouts properties: { v: 2, unique: true, key: { workout_id: 1.0 }, name: "workout_id_1", ns: "octofit_db.workouts" }
+2025-04-08T06:17:00.071+0000 I INDEX    [conn1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T06:17:00.072+0000 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2025-04-08T06:17:00.073+0000 I NETWORK  [conn1] end connection 127.0.0.1:35684 (0 connections now open)
+2025-04-08T06:17:09.467+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57150 #2 (1 connection now open)
+2025-04-08T06:17:09.467+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:57150 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-08T06:17:09.470+0000 I NETWORK  [conn2] end connection 127.0.0.1:57150 (0 connections now open)
